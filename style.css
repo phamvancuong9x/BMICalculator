@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+input {
+  width: 150px;
+  font-size: 20px;
+  display: block;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding: 10px 57px;
+}
+.main {
+  background-image: linear-gradient(
+    45deg,
+    rgb(195, 247, 244),
+    rgb(24, 160, 194)
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  min-width: 520px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.header {
+  text-align: center;
+  color: #444;
+  margin-bottom: 30px;
+}
+.content {
+}
+.height,
+.weight {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.height__input-unit,
+.weight__input-unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.unit {
+  /* float: right; */
+}
+.height__title {
+  font-size: 20px;
+}
+#height-input {
+}
+#height-input:focus,
+#height-input:focus + .unit,
+#weight-input:focus,
+#weight-input:focus + .unit {
+  color: rgb(26, 95, 245);
+}
+.error {
+  margin-top: 5px;
+  visibility: hidden;
+  color: rgb(253, 72, 0);
+}
+.height__error1 {
+}
+.weight {
+  margin: 20px 0;
+}
+.weight__title {
+  font-size: 20px;
+}
+.error {
+}
+.weight__error1 {
+}
+
+.result {
+  position: relative;
+}
+.btn {
+  transition: ease 0.5s;
+  font-size: 20px;
+  color: #fff;
+  margin: 20px 0;
+  padding: 12px 50px;
+  border: none;
+  background-color: rgb(10, 130, 211);
+  border-radius: 20px;
+}
+.btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.result__text {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #222;
+}
+.result__content {
+  font-size: 40px;
+}
+.notify {
+  display: none;
+  padding: 10px 10px;
+  border-radius: 15px;
+  position: absolute;
+  bottom:-35px;
+  left: 99px;
+}
+.notify1 {
+  /* display: block; */
+  color: rgb(248, 22, 22);
+}
+.notify2 {
+  color: rgb(248, 49, 22);
+}
+.notify3 {
+  color: rgb(247, 49, 0);
+}
+.notify4 {
+  color: rgb(16, 73, 231);
+}
+.notify5 {
+  color: rgb(252, 113, 0);
+}
+.notify6 {
+  color: rgb(247, 49, 0);
+}
+.notify7 {
+  color: rgb(248, 49, 22);
+}
+.notify8 {
+  color: rgb(252, 0, 0);
+}

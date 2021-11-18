@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="VI">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI CALCULATION</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="header">
+          <h1>BMI CALCULATION</h1>
+        </div>
+        <div class="content">
+          <div class="height">
+            <label form="height-input" class="height__title">Nhập chiều cao của bạn:
+           <div class="height__input-unit">
+            <input type="text" id="height-input" maxlength="3" />
+            <div class="unit">Cm</div>
+           </div>
+          
+        </label>
+            <div class="error height__error">
+              Chiều cao bạn nhập chưa đúng vui lòng kiểm tra lại: 1 - 299 !
+            </div>
+          </div>
+          <div class="weight">
+            <label form="weight-input" class="weight__title"> Nhập cân nặng của bạn:
+                <div class="height__input-unit">
+                <input type="text" id="weight-input" maxlength="3" />
+            <div class="unit">Kg</div>
+            </div>
+        </label>
+            <div class="error weight__error">
+              Cân nặng bạn nhập chưa đúng vui lòng kiểm tra lại :1 - 499 !
+            </div>
+            <div class="result">
+            <button class="btn">Xem kết quả</button>
+            <div class="result__text">BMI của bạn là: </div>
+            <div class="result__content">0</div>
+            <ul>
+                <li class="notify notify1">Bạn bị gầy độ III  <span class="index-BMI"> (BMI&lt;16.0)</span></li>
+                <li class="notify notify2">Bạn bị gầy độ II <span class="index-BMI"> (BMI:16.0-16.9)</span></li>
+                <li class="notify notify3">Bạn bị gầy độ I <span class="index-BMI"> (BMI: 17.0-18.4)</span></li>
+                <li class="notify notify4">Bạn có chỉ số BMI bình thường <span class="index-BMI"> (BMI: 18.5-24.9)</span></li>
+                <li class="notify notify5">Bạn bị thừa cân <span class="index-BMI"> (BMI: 25.0-29.9)</span></li>
+                <li class="notify notify6">Bạn bị béo phì độ I <span class="index-BMI"> (BMI: 30.0-34.9)</span></li>
+                <li class="notify notify7">Bạn bị béo phì độ II <span class="index-BMI"> (BMI: 35.0-39.9)</span></li>
+                <li class="notify notify8">Bạn bị béo phì độ III <span class="index-BMI"> (BMI: &gt;40.0)</span></li>
+               </ul>
+             </div>
+            </div>
+            
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
